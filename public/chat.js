@@ -15,7 +15,7 @@ btn.addEventListener('click', function(){
   socket.emit('chat', {
     //message: message.value,
     //handle: handle.value,
-    state: state.value
+    state: state
   });
 });
 
