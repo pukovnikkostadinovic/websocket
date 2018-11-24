@@ -7,6 +7,11 @@ var message = document.getElementById('message');
     state = document.getElementById('state');
 
 btn.addEventListener('click', function(){
+  if(state.value=='true'){
+    state = true;
+  }else{
+    state = false;
+  }
   socket.emit('chat', {
     //message: message.value,
     //handle: handle.value,
