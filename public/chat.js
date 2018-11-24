@@ -6,17 +6,19 @@ var message = document.getElementById('message');
     btn = document.getElementById('send'),
     output = document.getElementById('output'),
     state = document.getElementById('state');
+var state1;
 
 btn.addEventListener('click', function(){
+  console.log(state.value);
   if(state.value=='true'){
-    state = true;
+    state1 = true;
   }else{
-    state = false;
+    state1 = false;
   }
   socket.emit('chat', {
     //message: message.value,
     //handle: handle.value,
-    state: state
+    state: state1
   });
 });
 
