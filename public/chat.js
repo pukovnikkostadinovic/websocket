@@ -21,5 +21,5 @@ btn.addEventListener('click', function(){
 
 socket.on('chat', function(data){
   //output.innerHTML += '<p><strong>' + data.handle + ':</strong>'+data.message+'</p>';
-    output.innerHTML += '<p><strong>' + data.state + '</strong></p>';
+    output.innerHTML = '<p><strong>' + data.state + '</strong></p>';
 });
