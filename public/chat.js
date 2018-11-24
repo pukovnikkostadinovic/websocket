@@ -1,5 +1,5 @@
 var socket = io.connect('http://localhost:4000');
-//var socket = io.connect('http://yeti.cf:4000');
+//var socket = io.connect('http://yeti.cf:80');
 
 var message = document.getElementById('message');
     handle = document.getElementById('handle'),
