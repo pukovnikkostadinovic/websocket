@@ -7,9 +7,26 @@ var message = document.getElementById('message');
     output = document.getElementById('output'),
     state = document.getElementById('state');
 var state1;
+function toggle(button)
+{
+  if(button.value=='OFF'){
+   button.value='ON';
+   state1=true;
+  }
+  else{
+   button.value='OFF';
+   state1=false;
+  }
 
+   socket.emit('chat', {
+     //message: message.value,
+     //handle: handle.value,
+     state: state1
+   });
+   console.log(button.value);
+}
 btn.addEventListener('click', function(){
-  console.log(state.value);
+  console.log(onoff.value);
   if(state.value=='true'){
     state1 = true;
   }else{
